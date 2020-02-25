@@ -165,6 +165,61 @@
   334  25/02/20 14:53:50 cd ..
   335  25/02/20 15:00:24 history
   336  25/02/20 15:00:51 history >> comandos.txt
+  
+  // CREACION DE RAMAS Y USO DE GIT
+  338  25/02/20 15:08:55 cd Escritorio/
+  339  25/02/20 15:08:57 cd GPI2/
+  340  25/02/20 15:09:03 git status
+  341  25/02/20 15:09:09 git add.
+  342  25/02/20 15:09:15 git add .
+  343  25/02/20 15:09:37 git commit -m "Añadimos p01 y p02"
+  344  25/02/20 15:09:42 git push
+  345  25/02/20 15:09:55 ls -l
+  346  25/02/20 15:50:36 git branch 
+  347  25/02/20 16:06:31 nano index.html
+  348  25/02/20 16:12:44 ls -l
+  349  25/02/20 16:13:03 git branch 
+  350  25/02/20 16:13:12 git add .
+  351  25/02/20 16:13:23 git commit -m "Añadimos el index"
+  352  25/02/20 16:13:28 git push
+  353  25/02/20 16:13:59 git branch req001
+  354  25/02/20 16:14:12 git checkout req001 
+  355  25/02/20 16:14:18 git branch
+  356  25/02/20 16:14:28 nano index.html 
+  357  25/02/20 16:14:55 git status
+  358  25/02/20 16:15:07 git add .
+  359  25/02/20 16:15:27 git commit -m "Modificado por la rama req001"
+  360  25/02/20 16:15:38 git push origin req001 
+  361  25/02/20 16:16:03 git checkout master 
+  362  25/02/20 16:16:08 git branch
+  363  25/02/20 16:16:21 git branch hotfix
+  364  25/02/20 16:16:27 git checkout hotfix 
+  365  25/02/20 16:16:31 git branch
+  366  25/02/20 16:17:05 nano index.html
+  367  25/02/20 16:17:47 git add .
+  368  25/02/20 16:17:58 git commit -m "Modificado por la rama hotfix"
+  369  25/02/20 16:18:04 git push
+  370  25/02/20 16:18:13 git push origin hotfix 
+  371  25/02/20 16:18:41 git checkout master 
+  372  25/02/20 16:18:47 git branch 
+  373  25/02/20 16:19:42 git merge hotfix 
+  374  25/02/20 16:19:55 nano index.html 
+  375  25/02/20 16:20:18 git checkout req001
+  376  25/02/20 16:20:22 nano index.html 
+  377  25/02/20 16:20:32 git checkout master 
+  378  25/02/20 16:20:43 git branch -D hotfix 
+  379  25/02/20 16:20:50 git branch
+  380  25/02/20 16:20:57 nano index.html 
+  381  25/02/20 16:21:20 git checkout req001
+  382  25/02/20 16:21:35 history >> comandos2.txt
+  383  25/02/20 16:23:30 git add .
+  384  25/02/20 16:23:43 git commit -m "Cambios realizados"
+  385  25/02/20 16:23:47 git push
+  386  25/02/20 16:23:59 git checkout master 
+  387  25/02/20 16:24:07 git push
+  388  25/02/20 16:25:06 git status 
+  389  25/02/20 16:32:09 cd Escritorio/
+  390  25/02/20 16:32:18 history >> comandos.txt
 	
 
 
