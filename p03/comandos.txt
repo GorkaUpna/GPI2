@@ -1,4 +1,4 @@
-  // MAVEN
+  // MAVEN (PRIMEROS INTENTOS NO ME FUNCIONO)
   176  19/02/20 14:20:34 cd Escritorio/
   177  19/02/20 14:21:05 tar xzvf apache-maven-3.6.3-bin.tar.gz 
   178  19/02/20 14:21:27 ls -l
@@ -30,6 +30,9 @@
   204  19/02/20 14:36:05 cd ..
   205  19/02/20 14:36:07 ls 
   206  19/02/20 14:36:14 nano pom.xml
+  
+  // PARTE CREACION DE RAMAS Y MODIFICACION INDEX
+  // TUVE PROBLEMAS PORQUE SE CALLO GIT EN CLASE
   207  19/02/20 14:43:34 cd Escritorio/
   208  19/02/20 14:43:56 git clone https://github.com/GorkaUpna/GPI2
   209  19/02/20 14:44:02 ls
@@ -120,6 +123,8 @@
   294  19/02/20 15:29:00 git push
   295  19/02/20 15:29:10 git push origin req001
   296  19/02/20 15:30:21 git pull
+  
+  // MAVEN FUNCIONANDO CORRECTAMENTE
   297  25/02/20 14:12:42 cd Escritorio/
   298  25/02/20 14:12:55 git clone https://github.com/GorkaUpna/GPI2
   299  25/02/20 14:13:25 cd GPI2/
@@ -160,6 +165,7 @@
   334  25/02/20 14:53:50 cd ..
   335  25/02/20 15:00:24 history
   336  25/02/20 15:00:51 history >> comandos.txt
+	
 
 
 
