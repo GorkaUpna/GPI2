@@ -4,13 +4,13 @@
     </target>
  
     <target name="compile" depends="clean">
-        <mkdir dir="simple/classes" />
-        <javac srcdir="simple/src/main" destdir="simple/classes" />
+        <mkdir dir="simple-webapp/classes" />
+        <javac srcdir="simple-webapp/src/main" destdir="simple-webapp/classes" />
     </target>
  
     <target name="jar" depends="compile">
-        <mkdir dir="simple/jar" />
-        <jar destfile="simple/jar/gpi2A110992.jar" basedir="simple/classes">
+        <mkdir dir="simple-webapp/jar" />
+        <jar destfile="simple-webapp/jar/gpi2A110992.jar" basedir="simple-webapp/classes">
             <manifest>
                 <attribute name="Main-Class"
                   value="es.unavarra.gpi2.App" />
