@@ -1,13 +1,26 @@
 pipeline {
-    agent { label 'master' }
+	agent {label 'master'}
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
-                echo "Hello World!"
-                sh "echo Hello from the shell"
-                sh "hostname"
-                sh "uptime"
+                sh 'mvn compile'
             }
+        }
+        stage('Test') {
+            steps {
+                sh 'mvn test'
+            }       
+        }
+        stage('Validate') {
+            steps {
+                sh 'mvn validate'
+            }
+        }
+        stage('Verify'){
+			steps {
+				sh 'mvn verify'
+			}
         }
     }
 }
+
