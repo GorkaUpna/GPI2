@@ -1,12 +1,12 @@
-Jenkinsfile (Declarative Pipeline)
 pipeline {
-    agent any
+    agent { label 'master' }
     stages {
-        stage('Build') {
+        stage('build') {
             steps {
-                sh 'echo "Hello World"'
-                    echo "Multiline shell steps works too"
-                    ls -lah
+                echo "Hello World!"
+                sh "echo Hello from the shell"
+                sh "hostname"
+                sh "uptime"
             }
         }
     }
