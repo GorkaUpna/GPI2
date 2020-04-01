@@ -3,10 +3,9 @@ pipeline {
     stages {
         stage('Android') {
             steps {
-				echo 'Proyecto Arduino'
+				echo 'Proyecto Android'
                 dir('p02/ActivityA2020'){
-					sh './gradlew tasks'
-					sh './gradlew check'
+					sh './gradlew assembleDebug'
                 }
             }
         }
