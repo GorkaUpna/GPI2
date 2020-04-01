@@ -1,25 +1,29 @@
 pipeline {
 	agent {label 'master'}
     stages {
-        stage('Build') {
+        stage('Android') {
             steps {
-                sh 'mvn compile'
+				echo 'Proyecto Arduino'
+                dir('p02/ActivityA2020'){
+					sh './gradlew tasks'
+					sh './gradlew check'
+                }
             }
         }
-        stage('Test') {
+        stage('Arduino') {
             steps {
-                sh 'mvn test'
+                echo 'Proyecto Arduino'
+                
             }       
         }
-        stage('Validate') {
+        stage('Maven') {
             steps {
-                sh 'mvn validate'
+                echo 'Proyecto Maven'
+                dir('p03/simple'){
+					sh 'mvn verify'
+					sh 'site'
+                }
             }
-        }
-        stage('Verify'){
-			steps {
-				sh 'mvn verify'
-			}
         }
     }
 }
